@@ -27,7 +27,7 @@
 	<body id="<{$xoops_dirname}>">
       <{include file="$theme_name/tpl/topNav.tpl"}> 
         <div id="layoutSidenav">
-			<div id="layoutSidenav_nav" class="bg-light">
+			<div id="layoutSidenav_nav">
 			<{include file="$theme_name/tpl/leftBlock.tpl"}>
 			</div>
             <div id="layoutSidenav_content">
