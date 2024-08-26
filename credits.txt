@@ -1,0 +1,10 @@
+SB Admin XOOPS Theme - XOOPS Template based on SB Admin by StartBootstrap.com"
+
+Author: StartBootstrap.com
+
+Forked from https://github.com/liomj/sbadmin5
+
+Contributors:
+-------------
+Lio MJ (https://github.com/liomj)
+Goffy (https://github.com/ggoffy)
