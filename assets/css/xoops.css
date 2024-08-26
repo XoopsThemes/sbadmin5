@@ -1,0 +1,146 @@
+
+/* jGrowl redirection */
+div.jGrowl {
+    padding: 1em;
+    z-index: 9999;
+}
+
+/* JGrowl Box position in the page */
+body > div.jGrowl {
+    position: fixed;
+}
+
+body > div.jGrowl.top-right {
+    right: 25%;
+    left: 25%;
+    top: 2px;
+}
+
+body > div.jGrowl.bottom-left {
+    left: 0;
+    bottom: 0;
+}
+
+body > div.jGrowl.bottom-right {
+    right: 0;
+    bottom: 0;
+}
+
+body > div.jGrowl.center {
+    top: 0;
+    width: 50%;
+    left: 25%;
+}
+
+body > div.jGrowl.top-left {
+    left: 0;
+    top: 0;
+}
+
+/* jGrowl Box style */
+div.center div.jGrowl-notification, div.center div.jGrowl-closer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
+    background-color: #0d0505;
+    color: #FFFFFF;
+    width: 100%;
+    padding: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    border: 1px solid #0d0505;
+    display: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div.jGrowl div.jGrowl-notification {
+    min-height: 40px;
+}
+
+div.jGrowl div.jGrowl-notification div.jGrowl-header {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* jGrowl Close button */
+div.jGrowl div.jGrowl-notification button.jGrowl-close {
+    float: right;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+div.jGrowl div.jGrowl-closer {
+    height: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Site Close */
+
+.site-closed-body {
+	background: url(images/background-site-closed.jpg) top center no-repeat fixed;
+}
+
+
+/* User Welcome Left Block */
+
+.profile_info {
+    padding: 25px 10px 10px;
+    width: 65%;
+    float: left;
+}
+
+.img-circle.profile_img {
+    width: 70%;
+    background: #fff;
+    margin-left: 15%;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 20px;
+    border: 1px solid rgba(52,73,94,0.44);
+    padding: 4px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.profile_pic {
+    width: 35%;
+    float: left;
+}
+
+/* Avatar */
+
+.avatar-circle {
+    background: #006feb;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 50%;
+    font-size: 25px;
+	font-weight:bold;	
+}
+
+
+.clearfix:after, form:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
