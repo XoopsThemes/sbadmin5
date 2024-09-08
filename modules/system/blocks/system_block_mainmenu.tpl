@@ -1,7 +1,8 @@
-<a class="nav-link<{if !$block.nothome|default:false}> active<{/if}>" href="<{xoAppUrl ' '}>" title="<{$block.lang_home}>">
-    <div class="sb-nav-link-icon">&nbsp;<i class="fas fa-home"></i></div>&nbsp;<{$block.lang_home}></a>
+my new custom block
+<a class="nav-link<{if !$mainMenuSbadmin.nothome|default:false}> active<{/if}>" href="<{xoAppUrl ' '}>" title="<{$smarty.const.THEME_HOME}>">
+    <div class="sb-nav-link-icon">&nbsp;<i class="fa fa-home"></i></div>&nbsp;<{$smarty.const.THEME_HOME}></a>
 <!-- start module menu loop -->
-<{foreach item=module from=$block.modules}>
+<{foreach item=module from=$mainMenuSbadmin.modules}>
     <{if $module.sublinks}>
         <a class="nav-link <{if $module.highlight|default:false}> active<{/if}>" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
             <div class="sb-nav-link-icon">

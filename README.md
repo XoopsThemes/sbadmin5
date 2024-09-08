@@ -18,6 +18,9 @@ A Bootstrap 5 XOOPS Theme with minimal custom styling. Suitable theme in buildin
 4. Rename the subfolder sbadmin5-main to sbadmin5 and move it to your XOOPS themes folder www.yoursite.com/themes/
 5. Go to System Admin->Preferences-> System Options -> General Settings, and make sbadmin5 as your Default Theme. 
 
+## Customize Theme
+1. Dark or light mode: adapt <{assign var=theme_mode value='light'}> to light or dark
+
 ## Menu Control (Support for MyMenus Module)
 
 1. If you already installed the MyMenus Module, create a menu in Menus Manager

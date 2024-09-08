@@ -1,5 +1,32 @@
-<nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+<nav class="sb-sidenav accordion sb-sidenav-<{$theme_mode}>" id="sidenavAccordion">
 
+	//test
+	<div class="sb-sidenav-menu-heading"><{$smarty.const.THEME_SUBMENU}></div>
+
+	<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+		<div class="sb-nav-link-icon"><i class="fa fa-check-circle"></i></div>
+		<{$smarty.const.THEME_MENU2}>
+		<div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+	</a>
+
+		<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+			<nav class="sb-sidenav-menu-nested nav">
+				<a class="nav-link" href="<{$xoops_url}>" title=""><{$smarty.const.THEME_MENU5}></a>
+				<a class="nav-link" href="<{$xoops_url}>" title=""><{$smarty.const.THEME_MENU6}></a>
+			</nav>
+		</div>
+
+	<a class="nav-link" href="<{$xoops_url}>" title="">
+		<div class="sb-nav-link-icon">
+			<i class="fa fa-cube"></i>
+		</div><{$smarty.const.THEME_MENU3}></a>
+
+	<a class="nav-link" href="<{$xoops_url}>" title="">
+		<div class="sb-nav-link-icon">
+			<i class="fa fa-check-circle"></i>
+		</div><{$smarty.const.THEME_MENU4}></a>
+
+	//end test
     <{if $xoops_isuser|default:false}>
 		<div class="clearfix">
 			<div class="profile_pic">
