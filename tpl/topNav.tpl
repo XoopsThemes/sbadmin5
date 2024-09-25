@@ -1,6 +1,6 @@
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fa fa-bars"></i></button>
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="<{$xoops_url}>/index.php"><{$xoops_sitename}></a>
 
@@ -10,7 +10,7 @@
 				<input class="form-control" type="text" name="query"  placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>" aria-label="Search" aria-describedby="basic-addon2" />
 				<input type="hidden" name="action" value="results">
 				<div class="input-group-append">
-                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
 				</div>
 			</div>
 			</form>
@@ -18,7 +18,7 @@
 			<!-- Navbar-->
 		<ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i></a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 			<{if $xoops_isadmin}>
                 <li><a class="dropdown-item" href="<{$xoops_url}>/admin.php" target="_blank"><{$smarty.const.THEME_ADMINPANEL}></a>

@@ -6,7 +6,7 @@
             <div class="card mb-4">
                 <{if $block.title}>
                 <div class="card-header">
-                    <i class="fas fa-h-square mr-1"></i>
+                    <i class="fa fa-h-square mr-1"></i>
                     <{$block.title}>
                 </div>
                 <{/if}>

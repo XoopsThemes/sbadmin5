@@ -3,7 +3,7 @@
     <div class="card mb-4">
         <{if $block.title}>
         <div class="card-header">
-            <i class="fas fa-play-circle mr-1"></i>
+            <i class="fa fa-play-circle mr-1"></i>
             <{$block.title}>
         </div>
         <{/if}>

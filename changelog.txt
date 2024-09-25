@@ -1,0 +1,7 @@
+1.0.1 [2025/09/25]
+ - udated main menu (goffy)
+ - added Modulemenu class (goffy)
+ - updated README (goffy)
+
+1.0.0
+ - Original release (liomj)

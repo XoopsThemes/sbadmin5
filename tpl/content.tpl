@@ -12,7 +12,7 @@
                                     <div class="card-body"><i class="fa fa-user-circle fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_TOTALMEMBERS}></b></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white text-decoration-none" href="#"><h4><{$totalUsers}></h4></a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                        <div class="small text-white"><i class="fa fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -21,7 +21,7 @@
                                     <div class="card-body"><i class="fa fa-user-plus fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_REGISTERTODAY}></b></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white text-decoration-none" href="#"><h4><{$newUsersToday}></h4></a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                        <div class="small text-white"><i class="fa fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@
                                     <div class="card-body"><i class="fa fa-sticky-note fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_TOTALPOST}></b></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white text-decoration-none" href="#"><h4><{$totalPosts}></h4></a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                        <div class="small text-white"><i class="fa fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                                     <div class="card-body"><i class="fa fa-globe fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_TOTALONLINE}></b></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white text-decoration-none" href="#"><h4><{$totalOnline}></h4></a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                        <div class="small text-white"><i class="fa fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>

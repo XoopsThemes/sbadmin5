@@ -1,5 +1,4 @@
-<nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
-
+<nav class="sb-sidenav accordion sb-sidenav-<{$theme_mode}>" id="sidenavAccordion">
     <{if $xoops_isuser|default:false}>
 		<div class="clearfix">
 			<div class="profile_pic">
@@ -30,7 +29,6 @@
 			<{if $xoops_menu_sbadmin5|default:false}>
 				<{$xoops_menu_sbadmin5}>
 			<{/if}>
-
 			<{if $xoBlocks.canvas_left}>
 				<{foreach item=block from=$xoBlocks.canvas_left}>
 					<{if $block.title}><div class="sb-sidenav-menu-heading"><{$block.title}></div><{/if}>
