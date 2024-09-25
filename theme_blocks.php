@@ -54,7 +54,7 @@ function sbadmin5_main_menu() {
             // check whether class Modulemenu is available
             $ucfModulemenu = ucfirst($moduleDirName);
             $menuClass = "\\XoopsModules\\{$ucfModulemenu}\\Modulemenu";
-            if (class_exists($menuClass)) {
+            if (class_exists($menuClass) && method_exists($menuClass,'getMenuitemsSbadmin5')) {
                 // use sublinks created by class Modulemenu
                 $block['modules'][$i]['source'] = 'Modulemenu';
                 $menuHandler = new $menuClass();

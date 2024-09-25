@@ -21,10 +21,10 @@
     </head>
     <!--<body class="sb-nav-fixed" id="<{$xoops_dirname}>">-->
 	<body id="<{$xoops_dirname}>">
-      <{include file="$theme_name/tpl/topNav.tpl"}> 
+        <{include file="$theme_name/tpl/topNav.tpl"}>
         <div id="layoutSidenav">
 			<div id="layoutSidenav_nav" class="bg-<{$theme_mode}>">
-			<{include file="$theme_name/tpl/leftBlock.tpl"}>
+			    <{include file="$theme_name/tpl/leftBlock.tpl"}>
 			</div>
             <div id="layoutSidenav_content">
                 <{include file="$theme_name/tpl/content.tpl"}>
