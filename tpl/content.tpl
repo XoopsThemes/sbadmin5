@@ -7,7 +7,7 @@
                 <li class="breadcrumb-item active">Dashboard</li>
             </ol>
             <div class="row">
-                <{if $dashboard_comments|default:false}>
+                <{if !empty($dashboard_comments)}>
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-primary text-white mb-4">
                             <div class="card-body"><i class="fa fa-user-circle fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_COMMENTS}></b></div>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 <{/if}>
-                <{if $dashboard_newuser|default:false}>
+                <{if !empty($dashboard_newuser)}>
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-warning text-white mb-4">
                             <div class="card-body"><i class="fa fa-user-plus fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_LATESTMEMBER}></b></div>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 <{/if}>
-                <{if $dashboard_online|default:false}>
+                <{if !empty($dashboard_online)}>
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-danger text-white mb-4">
                             <div class="card-body"><i class="fa fa-globe fa-2x"></i>&nbsp;<b><{$smarty.const.THEME_TOTALONLINE}></b></div>
