@@ -3,6 +3,7 @@
     <head>
         <{assign var=theme_name value=$xoTheme->folderName}>
         <{assign var=theme_mode value='light'}>
+        <{assign var=show_dashboard value=true}>
 		<meta charset="<{$xoops_charset}>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

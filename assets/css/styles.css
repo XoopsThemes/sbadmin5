@@ -3043,7 +3043,6 @@ textarea.form-control-lg {
   pointer-events: none;
   opacity: 0.65;
 }
-
 .btn-primary {
   color: #fff;
   background-color: #0d6efd;
@@ -11383,10 +11382,10 @@ body {
   }
 
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
-    transform: translateX(-225px);
+    transform: translateX(-350px);
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content {
-    margin-left: -225px;
+    margin-left: -350px;
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before {
     display: none;

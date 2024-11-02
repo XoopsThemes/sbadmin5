@@ -40,10 +40,10 @@ define('THEME_ADMINPANEL', 'Site Administration');
 define('THEME_WELCOME', 'Welcome');
 define('THEME_TOTALPOST', 'Posts');
 define('THEME_TOTALMEMBERS', 'Members');
-define('THEME_LATESTMEMBER', 'Latest Member');
+define('THEME_LATESTMEMBER', 'Latest Members');
 define('THEME_TOTALONLINE', 'Online');
 define('THEME_REGISTERTODAY', 'Register Today');
-define('THEME_REGISTERYESTERDAY', 'Register Yeserday');
+define('THEME_REGISTERYESTERDAY', 'Register Yesterday');
 
 //Slider
 define('THEME_READMORE', 'Read More');
@@ -115,6 +115,7 @@ define('THEME_TOOLBAR_CLOSE', 'Close');
 define('THEME_TOOLBAR_SHOW_BLOCK_EDIT', 'Block Edits');
 define('THEME_TOOLBAR_EDIT_THIS_BLOCK', 'Edit this block');
 
+define('THEME_COMMENTS', 'Comments');
 define('THEME_COMMENT_ADD', 'Add Your Comment');
 define('THEME_COMMENT_OPTIONS', 'Comment View Options');
 

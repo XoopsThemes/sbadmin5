@@ -21,7 +21,7 @@ function sbadmin5_main_menu() {
     - a list of sublinks for current module
     this is the same what XOOPS does by default for the main menu block
 
-    if there is a class Modulemenu is available in the module then this list of active modules/sublinks will be used instead
+    if there is a class Modulemenu available in the module then this list of active modules/sublinks will be used instead
      */
     global $xoTheme, $xoopsModule, $xoopsUser;
 
@@ -77,5 +77,41 @@ function sbadmin5_main_menu() {
     }
 
     $GLOBALS['xoopsTpl']->assign('mainMenuSbadmin', $block);
+
+}
+
+function sbadmin5_dashboard() {
+    /* this function the dashboard items by using system blocks*/
+
+    require_once XOOPS_ROOT_PATH . '/modules/system/blocks/system_blocks.php';
+
+    /*block online*/
+    $block = b_system_online_show();
+    if ($block) {
+        $dashboard_online = [];
+        $dashboard_online['totalOnline'] = $block['online_total'];
+        $GLOBALS['xoopsTpl']->assign('dashboard_online', $dashboard_online);
+    }
+
+    /*block new members*/
+    $options = [];
+    $options[0] = 10;
+    $options[1] = 1;
+    $block = b_system_newmembers_show($options);
+    if ($block) {
+        $dashboard_newuser = [];
+        $dashboard_newuser['users'] = $block['users'];
+        $GLOBALS['xoopsTpl']->assign('dashboard_newuser', $dashboard_newuser);
+    }
+
+    /*block comments*/
+    $options = [];
+    $options[0] = 10;
+    $block = b_system_comments_show($options);
+    if ($block) {
+        $dashboard_comments = [];
+        $dashboard_comments['comments'] = $block['comments'];
+        $GLOBALS['xoopsTpl']->assign('dashboard_comments', $dashboard_comments);
+    }
 
 }

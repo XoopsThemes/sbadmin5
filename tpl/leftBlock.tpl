@@ -23,7 +23,7 @@
 			</div>
 		</div>
 	<{/if}>
-                    
+
 	<div class="sb-sidenav-menu">
 		<div class="nav">
 			<{if $xoops_menu_sbadmin5|default:false}>
@@ -37,7 +37,7 @@
 			<{/if}>
 	   </div>
 	</div>
-		
+
 	<{if $xoops_isuser|default:false}>
         <div class="sb-sidenav-footer">
 			<div class="small"><{$smarty.const.THEME_LOGGEDINAS}></div>
