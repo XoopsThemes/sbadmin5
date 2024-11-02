@@ -1,20 +1,20 @@
 <{include file="db:profile_breadcrumbs.tpl"}>
 
-<{if $old_avatar}>
+<{if !empty($old_avatar)}>
     <div class="pad10 center">
         <h4 class="bold red"><{$smarty.const._US_OLDDELETED}></h4>
         <img src="<{$old_avatar}>" alt="" />
     </div>
 <{/if}>
 
-<{if $uploadavatar}>
+<{if !empty($uploadavatar)}>
 <{$uploadavatar.javascript}>
 <legend class="bold"><{$uploadavatar.title}></legend>
 <form name="<{$uploadavatar.name}>" action="<{$uploadavatar.action}>" method="<{$uploadavatar.method}>" <{$uploadavatar.extra}>>
 	<div class="form-group row">
 		<!-- start of form elements loop -->
 		<{foreach item=element from=$uploadavatar.elements}>
-			<{if !$element.hidden}>
+			<{if isset($element.hidden) && $element.hidden != true}>
 				<label class="col-2 col-form-label">
 					<span class='caption-text'><{$element.caption}></span>
 				</label>
@@ -24,7 +24,7 @@
 		    <{else}>
 			<{$element.body}>
 			<{/if}>
-			<{if $element.description != ""}>
+			<{if !empty($element.description)}>
 				<small id="passwordHelpBlock" class="form-text text-muted">
 					<{$element.description}>
 				</small>
@@ -43,7 +43,7 @@
 	<div class="form-group">
 		<!-- start of form elements loop -->
 		<{foreach item=element from=$chooseavatar.elements}>
-			<{if !$element.hidden}>
+			<{if isset($element.hidden) && $element.hidden != true}>
 				<label class="col-sm-2 col-form-label">
 					<span class='caption-text'><{$element.caption}></span>
 				</label>

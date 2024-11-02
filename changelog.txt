@@ -2,6 +2,7 @@
  - udated main menu (goffy)
  - added Modulemenu class (goffy)
  - updated README (goffy)
+ - added dashboard items (goffy)
 
 1.0.0
  - Original release (liomj)
