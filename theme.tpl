@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <{assign var=theme_name value=$xoTheme->folderName}>
+        <!--theme_mode: dark light white black-->
         <{assign var=theme_mode value='light'}>
-        <{assign var=show_dashboard value=true}>
+        <{assign var=show_dashboard value=false}>
 		<meta charset="<{$xoops_charset}>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
