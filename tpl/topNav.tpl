@@ -1,8 +1,11 @@
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-<{$theme_mode}> bg-<{$theme_mode}>">
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fa fa-bars"></i></button>
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="<{$xoops_url}>/index.php"><{$xoops_sitename}></a>
+            <a class="navbar-brand ps-3" href="<{$xoops_url}>/index.php">
+				<img class="img-fluid" src="<{xoImgUrl}>/assets/img/logo.png" alt="Logo">
+				<{$xoops_sitename}>
+			</a>
 
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" role="search" action="<{xoAppUrl 'search.php'}>" method="get">
