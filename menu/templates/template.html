@@ -1,45 +1,92 @@
 
-<{assign var=count value=0}>
+<{assign var=count value=0}> <!-- Initialize the counter for collapsible menus -->
+
 <{foreach item=menu from=$block}> 
 
-	<{if $menu.level == 0}> 
-		<{if $menu.hassub}> 
-		<{assign var=count value=$count+1}>
-			<!--Collasped Menu -->
-			<a class="nav-link collapsed<{if $menu.selected|default:false}> active<{/if}>" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts-<{$count}>" aria-expanded="false" aria-controls="collapseLayouts-<{$count}>">
-			<div class="sb-nav-link-icon">
-			<{if $menu.image}><i class="<{$menu.image}>"></i><{else}><i class="fa <{if $menu.selected|default:false}>fa-check-circle<{else}>fa-cube<{/if}>"></i><{/if}></div><{$menu.title}> 
-			<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+    <!-- Top-Level Menu -->
+    <{if $menu.level == 0}> 
+        <!-- Collapsible Menu -->
+        <{if $menu.hassub}> 
+            <{assign var=count value=$count+1}> <!-- Increment counter for unique IDs -->
+            
+            <a 
+                class="nav-link collapsed<{if $menu.selected|default:false}> active<{/if}>" 
+                href="#" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseLayouts-<{$count}>" 
+                aria-expanded="false" 
+                aria-controls="collapseLayouts-<{$count}>"
+            >
+                <div class="sb-nav-link-icon">
+                    <{if $menu.image}>
+                        <i class="<{$menu.image}>"></i>
+                    <{else}>
+                        <i class="fa <{if $menu.selected|default:false}>fa-check-circle<{else}>fa-cube<{/if}>"></i>
+                    <{/if}>
+                </div>
+                <{$menu.title}> x
+                <div class="sb-sidenav-collapse-arrow">
+                    <i class="fa fa-angle-down"></i>
+                </div>
             </a>
-		
-			<{else}> 
-			
-			<!--Main Menu -->
-				<{if $menu.alt_title!= 'Header'}>
-					<a class="nav-link<{if $menu.selected|default:false}> active<{/if}>" href="<{$menu.link}>" target="<{$menu.target}>" alt="<{$menu.alt_title}>" title="<{$menu.alt_title}>">
-					<div class="sb-nav-link-icon">
-					<{if $menu.image}><i class="<{$menu.image}>"></i><{else}><i class="fa <{if $menu.selected|default:false}>fa-check-circle<{else}>fa-cube<{/if}>"></i><{/if}></div><{$menu.title}></a>
-				<{else}> 
-					<div class="sb-sidenav-menu-heading"><{$menu.title}></div>
-				<{/if}> 
-		<{/if}> 
-		
-		<{if $menu.close != ''}><{$menu.close}><{/if}> 
-		
-	<{else}> 
-	
-		<!--Sub Menu -->
-		<div class="collapse" id="collapseLayouts-<{$count}>" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-			<nav class="sb-sidenav-menu-nested nav">
-				<a class="nav-link<{if $menu.selected|default:false}> active<{/if}>" href="<{$menu.link}>" target="<{$menu.target}>" alt="<{$menu.alt_title}>" title="<{$menu.alt_title}>"><{$menu.title}></a>
-			</nav>
+        
+        <!-- Main Menu Without Submenus -->
+        <{else}> 
+            <{if $menu.alt_title != 'Header'}>
+                <a 
+                    class="nav-link<{if $menu.selected|default:false}> active<{/if}>" 
+                    href="<{$menu.link}>" 
+                    target="<{$menu.target}>" 
+                    alt="<{$menu.alt_title}>" 
+                    title="<{$menu.alt_title}>"
+                >
+                    <div class="sb-nav-link-icon">
+                        <{if $menu.image}>
+                            <i class="<{$menu.image}>"></i>
+                        <{else}>
+                            <i class="fa <{if $menu.selected|default:false}>fa-check-circle<{else}>fa-cube<{/if}>"></i>
+                        <{/if}>
+                    </div>
+                    <{$menu.title}>
+                </a>
+            <{else}> 
+                <!-- Header Section -->
+                <div class="sb-sidenav-menu-heading">
+                    <{$menu.title}>
+                </div>
+            <{/if}>
+        <{/if}>
+        
+        <!-- Additional Closing Elements -->
+        <{if $menu.close != ''}><{$menu.close}><{/if}> 
+    
+    <!-- Submenus -->
+    <{else}> 
+        <div 
+            class="collapse" 
+            id="collapseLayouts-<{$count}>" 
+            aria-labelledby="headingOne" 
+            data-bs-parent="#sidenavAccordion"
+        >
+            <nav class="sb-sidenav-menu-nested nav">
+                <a 
+                    class="nav-link<{if $menu.selected|default:false}> active<{/if}>" 
+                    href="<{$menu.link}>" 
+                    target="<{$menu.target}>" 
+                    alt="<{$menu.alt_title}>" 
+                    title="<{$menu.alt_title}>"
+                >
+                    <{$menu.title}>
+                </a>
+            </nav>
         </div>
-	
-		<{if $menu.close != ''}><{$menu.close}><{/if}> 
-	
-	<{/if}> 
+
+        <!-- Additional Closing Elements -->
+        <{if $menu.close != ''}><{$menu.close}><{/if}> 
+    <{/if}> 
+
 <{/foreach}>
-  
+
 
    
 
