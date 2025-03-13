@@ -4,6 +4,7 @@
  - updated README (goffy)
  - added dashboard items (goffy)
  - updated mymenu template (liomj)
+ - updated block positions (goffy)
 
 1.0.0
  - Original release (liomj)

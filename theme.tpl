@@ -4,7 +4,7 @@
         <{assign var=theme_name value=$xoTheme->folderName}>
         <!--theme_mode: dark light white black-->
         <{assign var=theme_mode value='light'}>
-        <{assign var=show_dashboard value=false}>
+        <{assign var=show_dashboard value=true}>
 		<meta charset="<{$xoops_charset}>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,7 +31,7 @@
             <div id="layoutSidenav_content">
                 <{include file="$theme_name/tpl/content.tpl"}>
                 <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
+                    <div class="container-fluid px-4 theme-footer">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted"><{$xoops_footer}></div>
                             <div>
