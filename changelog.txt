@@ -4,6 +4,8 @@
  - updated README (goffy)
  - added dashboard items (goffy)
  - updated mymenu template (liomj)
+ - updated block positions (goffy)
+ - fixed bug with modal sites without menu, e.g. misc.php?action=showpopups&type=online (goffy)
 
 1.0.0
  - Original release (liomj)
